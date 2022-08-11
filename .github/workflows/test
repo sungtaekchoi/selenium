@@ -2,9 +2,9 @@ name: selenium Test workflow
 
 on:
   push:
-    branches: selenium_test
+    branches: main
   pull_request:
-    branches: selenium_test
+    branches: main
 
 
 jobs:
