@@ -1,0 +1,15 @@
+name: selenium Test workflow
+
+on:
+  push:
+    branches: selenium_test
+  pull_request:
+    branches: selenium_test
+
+
+jobs:
+  build:
+    runs-on: [self-hosted, Windows]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nakajiss/DockerSeleniumAction@main
